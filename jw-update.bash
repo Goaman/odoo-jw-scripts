@@ -23,8 +23,8 @@ else
     message="[IMP] web_editor: update Jabberwock library to commit $commit_id\n\nChangelog:\n$changelog"
 
     cd $folder_odoo
-    git add $folder_odoo/addons/web_editor/static/lib/jabberwock/jabberwock.js
-    git add $folder_odoo/addons/web_editor/static/lib/jabberwock/jabberwock.css
+    git add addons/web_editor/static/lib/jabberwock/jabberwock.js
+    git add addons/web_editor/static/lib/jabberwock/jabberwock.css
     printf "$message" | git commit -F -
 fi
 

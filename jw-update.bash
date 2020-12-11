@@ -4,7 +4,7 @@ folder_jabberwock=$1
 folder_odoo=$2
 
 cd $folder_odoo
-previous_commit=$(git log --all --grep='\[IMP] web_editor: update Jabberwock library to commit' --pretty=oneline -n 1 | grep -oE '[^ ]+$')
+previous_commit=$(git log --grep='\[IMP] web_editor: update Jabberwock library to commit' --pretty=oneline -n 1 | grep -oE '[^ ]+$')
 
 cd $folder_jabberwock
 commit_id=$(git rev-parse --short HEAD)
